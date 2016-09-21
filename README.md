@@ -1,4 +1,4 @@
-React Redux Local Form
+React Style Side Effect
 =========================
 
 [![npm](https://img.shields.io/npm/v/react-style-side-effect.svg?style=flat-square)](https://www.npmjs.com/package/react-style-side-effect)
