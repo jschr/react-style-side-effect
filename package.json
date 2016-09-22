@@ -1,13 +1,14 @@
 {
   "name": "react-style-side-effect",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
   "author": "",
   "license": "MIT",
   "scripts": {
     "lint": "eslint .; exit 0",
-    "build:lib": "babel src --out-dir lib"
+    "build:lib": "babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run lint && npm run build:lib"
   },
   "dependencies": {
     "react-side-effect": "^1.0.2"
