@@ -34,3 +34,27 @@ export default function MyApp() {
   )
 }
 ```
+
+## Usage with Aphrodite
+
+```js
+import React from 'react'
+import { StyleSheet, css } from 'aphrodite'
+import createStyleSideEffect from 'react-style-side-effect'
+
+const HtmlStyle = createStyleSideEffect(document.docElement)
+
+const styles = StyleSheet.create({
+  html: {
+    fontSize: '14px' // base font size for rem units
+  }
+})
+
+export default function MyApp() {
+  return (
+    <HtmlStyle className={ css(styles.html) }>
+      ...
+    </HtmlStyle>
+  )
+}
+```
