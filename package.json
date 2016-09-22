@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint .; exit 0",
     "build:lib": "babel src --out-dir lib",
+    "clean": "rimraf lib",
     "prepublish": "npm run clean && npm run lint && npm run build:lib"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "eslint": "^3.5.0",
     "eslint-config-rackt": "^1.1.1",
     "eslint-plugin-react": "^6.2.2",
+    "rimraf": "^2.5.4",
     "webpack": "^1.9.11"
   }
 }
